@@ -1,7 +1,13 @@
 import React from 'react'
-import { Text } from 'react-native'
+import { View, Text } from 'react-native'
+import Primeiro from './components/Primeiro'
 
-export default ()=>{
-    return  <Text>Primeiro componente</Text>
-}
+export default ()=> (
+    <View>
+        <Text>{ 1 + 1 }</Text>
+        <Primeiro/>
+    </View>
+)
+
+
 
