@@ -5,10 +5,11 @@ import Primeiro from './components/Primeiro'
 import MinMax from './components/MixMax'
 import CompPadrao, { Comp1, Comp2 } from './components/Multi'
 import Titulo from './components/Titulo'
-
+import Botao from './components/Botao'
 
 export default ()=> (
     <View style={style.App}>
+        <Botao />
         <Titulo principal="Cadastro Produto" secundario="Tela de Cadastro do produto" />
         <Aleatorio min={1} max={60} />
         <Aleatorio min={1} max={60} />
