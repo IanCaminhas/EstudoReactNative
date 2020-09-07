@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Text, StyleSheet } from 'react-native'
+import { View, Text, StyleSheet, SafeAreaView } from 'react-native'
 //import Aleatorio from './components/Aleatorio' 
 //import Primeiro from './components/Primeiro'
 //import MinMax from './components/MixMax'
@@ -10,15 +10,27 @@ import { View, Text, StyleSheet } from 'react-native'
 //import Pai from './components/direta/Pai'
 //import Pai from './components/indireta/Pai'
 //import ContadorV2 from './components/contador/ContadorV2'
-import Diferenciar from './components/Diferenciar'
+//import Diferenciar from './components/Diferenciar'
+//import ParImpar from './components/ParImpar'
+import Familia from './components/relacao/Familia'
+import Membro from './components/relacao/Membro'
 
 export default ()=> (
-    <View style={style.App}>
-       
-       <Diferenciar />
-       
+    <SafeAreaView style={style.App}>
+        <Familia>
+            <Membro nome="Bia" sobrenome="Arruda"/>
+            <Membro nome="Carlos" sobrenome="Arruda"/>
+        </Familia>
+        <Familia>
+            <Membro nome="Ana" sobrenome="Silva"/>
+            <Membro nome="Julia" sobrenome="Silva"/>
+            <Membro nome="Gui" sobrenome="Silva"/>
+            <Membro nome="Rebeca" sobrenome="Silva"/>
+        </Familia>
        {/*  
+        <ParImpar num={4}/>
        <ContadorV2 />
+        <Diferenciar />
        <Pai />
        <Contador inicial= {100} passo={13} />
         <Contador />
@@ -33,7 +45,7 @@ export default ()=> (
         <Comp1 />
         <Comp2 />
         <Primeiro/> */}
-    </View>
+    </SafeAreaView>
 )
 
 const style = StyleSheet.create({
