@@ -12,12 +12,22 @@ import { View, Text, StyleSheet, SafeAreaView } from 'react-native'
 //import ContadorV2 from './components/contador/ContadorV2'
 //import Diferenciar from './components/Diferenciar'
 //import ParImpar from './components/ParImpar'
-import Familia from './components/relacao/Familia'
-import Membro from './components/relacao/Membro'
+//import Familia from './components/relacao/Familia'
+//import Membro from './components/relacao/Membro'
+import UsuarioLogado from './components/UsuarioLogado'
+
 
 export default ()=> (
     <SafeAreaView style={style.App}>
-        <Familia>
+
+    <UsuarioLogado usuario={{nome:'Ian', email:'caminhasian@gmail.com'}}/>
+    <UsuarioLogado usuario={{nome:'Ana'}}/>
+    <UsuarioLogado usuario={{email:'ana@gmail.com'}}/>
+    <UsuarioLogado usuario={null}/>
+    <UsuarioLogado usuario={{}}/>
+
+       {/*  
+         <Familia>
             <Membro nome="Bia" sobrenome="Arruda"/>
             <Membro nome="Carlos" sobrenome="Arruda"/>
         </Familia>
@@ -27,7 +37,7 @@ export default ()=> (
             <Membro nome="Gui" sobrenome="Silva"/>
             <Membro nome="Rebeca" sobrenome="Silva"/>
         </Familia>
-       {/*  
+
         <ParImpar num={4}/>
        <ContadorV2 />
         <Diferenciar />
