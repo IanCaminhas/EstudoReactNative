@@ -17,14 +17,21 @@ import { View, Text, StyleSheet, SafeAreaView } from 'react-native'
 //import UsuarioLogado from './components/UsuarioLogado'
 //import ListaProdutos from './components/produtos/ListaProdutos'
 //import ListaProdutosV2 from './components/produtos/ListaProdutosV2'
-import DigiteSeuNome from './components/DigiteSeuNome'
+//import DigiteSeuNome from './components/DigiteSeuNome'
+import Quadrado from './components/layout/Quadrado'
 
 export default ()=> (
     <SafeAreaView style={style.App}>
+    
+        <Quadrado />
+        <Quadrado cor='#F00' />
+        <Quadrado cor='#0F0' />
+        <Quadrado cor='#009' />
 
-        <DigiteSeuNome />
+
 
        {/*
+        <DigiteSeuNome />
         <ListaProdutosV2/>
        <ListaProdutos/>  
         <UsuarioLogado usuario={{nome:'Ian', email:'caminhasian@gmail.com'}}/>
