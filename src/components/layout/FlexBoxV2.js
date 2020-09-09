@@ -19,8 +19,10 @@ export default props =>{
 
 const style = StyleSheet.create({
     FlexV1: {
-        flexGrow: 1,
-        justifyContent:"space-between",
+        flex:1,
+        width: '100%',
+        alignItems:"center",
+        justifyContent:"center",
         backgroundColor: '#000'
     }
 })
