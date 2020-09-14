@@ -18,13 +18,16 @@ import { View, Text, StyleSheet, SafeAreaView } from 'react-native'
 //import ListaProdutos from './components/produtos/ListaProdutos'
 //import ListaProdutosV2 from './components/produtos/ListaProdutosV2'
 //import DigiteSeuNome from './components/DigiteSeuNome'
-//import FlexBoxV1 from './components/layout/FlexBoxV1'
-import FlexBoxV2 from './components/layout/FlexBoxV2'
+//import FlexBoxV1 from './components/layout/FlexBoxV1
+//import FlexBoxV2 from './components/layout/FlexBoxV2'
+import FlexBoxV3 from './components/layout/FlexBoxV3'
+
 export default ()=> (
     <SafeAreaView style={style.App}>
-    
-        <FlexBoxV2 />
+
+       <FlexBoxV3 />
        {/*
+        <FlexBoxV2 />
         <FlexBoxV1 />
         <DigiteSeuNome />
         <ListaProdutosV2/>
