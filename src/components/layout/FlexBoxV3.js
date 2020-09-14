@@ -5,7 +5,7 @@ import Quadrado from './Quadrado'
 
 export default props =>{
     return (
-        <View style={style.FlexV1}>
+        <View style={style.FlexV3}>
               <Quadrado />
               <Quadrado cor='#ff801a' lado={20} />
               <Quadrado cor='#0F0' lado={30} />
@@ -19,7 +19,7 @@ export default props =>{
 }
 
 const style = StyleSheet.create({
-    FlexV1: {
+    FlexV3: {
         flexDirection: "row",
         justifyContent:"space-evenly",
         alignItems: "baseline",

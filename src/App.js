@@ -20,12 +20,13 @@ import { View, Text, StyleSheet, SafeAreaView } from 'react-native'
 //import DigiteSeuNome from './components/DigiteSeuNome'
 //import FlexBoxV1 from './components/layout/FlexBoxV1
 //import FlexBoxV2 from './components/layout/FlexBoxV2'
-import FlexBoxV3 from './components/layout/FlexBoxV3'
+//import FlexBoxV3 from './components/layout/FlexBoxV3'
+import FlexBoxV4 from './components/layout/FlexBoxV4'
 
 export default ()=> (
     <SafeAreaView style={style.App}>
 
-       <FlexBoxV3 />
+       <FlexBoxV4 />
        {/*
         <FlexBoxV2 />
         <FlexBoxV1 />
